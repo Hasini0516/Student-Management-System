@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001';
+const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 export const getAllStudents = () => axios.get(`${API_URL}/students`);
 export const getStudentById = (id) => axios.get(`${API_URL}/students/${id}`);
