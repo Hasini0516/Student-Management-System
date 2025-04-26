@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Student = require('../DB/StudentSchema.js');
+const Student = require('../DB/studentSchema.js');
 
 // POST /students - Add a new student
 router.post('/', async (req, res) => {
